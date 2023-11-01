@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  color: mintcream;
+}
+
+body {
+  background: linear-gradient(-45deg, #d7bd2b, #569df3, #d5234f, #0ee9b6);
+  background-size: 400% 400%;
+  animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  color: mintcream;
+  padding: 0.75rem 1rem;
+  border: 1px solid mintcream;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid mintcream;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: none;
+  color: mintcream;
+  border: 1px solid mintcream;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.todo-btn:hover,
+button:hover {
+  background: rgb(246, 13, 164); 
+  color: #fff; 
+}
+
+.fa-eraser {
+  margin-left: 0.75rem;
+  color: mintcream; 
+}
+
+.incompleted {
+  color: mintcream; 
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.completed {
+  color: rgb(0, 255, 128); 
+  text-decoration: line-through;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.edit-icon,
+.eraser-icon {
+  cursor: pointer;
+}
+
+.edit-icon:hover,
+.eraser-icon:hover {
+  transform: scale(1.2); 
+}
+
+.eraser-icon:hover {
+  color: rgb(255, 0, 0);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
